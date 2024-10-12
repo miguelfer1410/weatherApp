@@ -1,0 +1,14 @@
+<div class="container" *ngIf="weatherForecast">
+  <div class="forecast-list">
+    <ul class="horizontal-list">
+      <li class="list-item" *ngFor="let forecast of weatherForecast.list">
+        <p>{{ forecast.dt_txt }}</p>
+        <div class="img-container">
+          <img class="img" [src]="'http://openweathermap.org/img/wn/' + forecast.weather[0].icon + '@2x.png'" alt="Weather Icon">
+        </div>
+        <p>{{ decimal(forecast.main.temp - 273.15) }} °C</p>
+        <p>{{ forecast.weather[0].description }}</p>
+      </li>
+    </ul>
+  </div>
+</div>

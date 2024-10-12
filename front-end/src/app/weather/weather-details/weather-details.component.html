@@ -1,0 +1,8 @@
+<div class="container" *ngIf="weatherDetails">
+  <h3 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">{{ weatherDetails.name }}</h3>
+  <div class="img-container">
+    <img [src]="'http://openweathermap.org/img/wn/' + weatherDetails.weather[0].icon + '@2x.png'">
+  </div>
+  <p>Temperature: {{ weatherDetails.main.temp }} °C</p>
+  <p>Condition: {{ weatherDetails.weather[0].description }}</p>
+</div>

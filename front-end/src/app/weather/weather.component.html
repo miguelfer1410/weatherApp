@@ -1,0 +1,8 @@
+<div class="page">
+  <div class="container">
+    <input [(ngModel)]="city" placeholder="Enter city" />
+    <button class="weather-button" (click)="getData()">Get Weather</button>
+  </div>
+  <app-weather-details [weatherDetails]="weatherData"></app-weather-details>
+  <app-weather-forecast [weatherForecast]="weatherForecast"></app-weather-forecast>
+</div>

@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #eaeaea;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.img-container {
+  background-color: lightblue;
+  border-radius: 20px;
+}
+
